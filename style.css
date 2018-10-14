@@ -1,0 +1,172 @@
+ /* selector{
+
+
+	property : value;
+}
+*/
+ 
+*{
+	text-align: right;
+	/*  by doing this only the top 3 ie home, about, login go to the right . this is happening cz css is CASCADING and we hv specified thhat h2, p, etc shud be assigned diff  values  */
+}
+
+
+  body{
+/* I HAVR DISABLED BG IMG SO THAT I CAN CHECK BG COLOR */ 
+
+	background-image: url(screenshot.png);
+background-size: cover;
+
+}
+
+ /* this is element, element
+h2,p  
+{
+	color: #AA4139; 
+	text-align: center;
+	border: 5px dashed rgba(255,176,170,0.5);
+	cursor: pointer;
+}
+*/
+
+
+
+
+
+
+
+
+/* this is element element -- after doing this 
+the output is 
+ HOME AS LEFT AND tsxt align center doesnt apyly to them anymore
+ LOREN IPSUM ALL OF THEM ARE ALIGNED TOWARDS THE LEFT 
+THIS IS BCZ WRITING THE SELECTOR IN THIS SYNTAX MEANS 
+APPLY THE FOLLOWING FEATURES TO ALL THE P'S WHICH R INSIDE H2
+BUT
+<h2>HOME</h2>
+<div id="div1">
+	<p class="webtext active">Loren ipsum</p>
+<p class="webtext">Loren ipsum</p>
+<p class="webtext">Loren ipsum</p>
+<p  class="webtext">Loren ipsum</p>
+</div>
+
+AS WE CAN SEE NOTHING IS INSIDE H2
+
+SO IF WE DO THE FOLLOWING
+<h2>HOME <p> HOMEGNOME</p></h2>
+WE GET 
+       HOMEGNOME 
+ IN THE CENTER
+BCZ 
+h2 p  
+{
+	color: #AA4139; 
+	text-align: center;
+	border: 5px dashed rgba(255,176,170,0.5);
+	cursor: pointer;
+} 
+ARE APPLIED IN HOMEGNOME AS IT IS INSIDE THE H2 TAG AND THE OTHERS ARE NOT
+
+SO BE REAAAALLLLLLYYYYY CAREEEEFFFUUUULLLLTTTTT 
+
+
+  AND THE REST R STILL TOWARDS THE LEFT
+
+
+
+
+
+ */ 
+ h2{
+ 	color: red;
+ }
+h2 +p  
+{
+	color: #AA4139; 
+	text-align: center;
+	border: 5px dashed rgba(255,176,170,0.5);
+	cursor: pointer;
+}
+
+
+
+
+
+p{
+
+/* text-decoration: underline; */
+ /* text-decoration: line-through; */
+ /* text-transform: uppercase; */
+line-height: 100px;
+/* font-style: italic;
+font-weight: bold;
+font-family: Georgia
+font-family: 'Indie Flower', cursive; f
+from gooogle fonts
+choose the fonts and select + option and add it
+copy the links
+
+ */
+
+font-family: 'Indie Flower', cursive;
+font-style: italic;
+font-weight: bold;
+font-size: 150%
+
+
+ /* */
+
+ }
+
+img{
+	float: right;
+	float: left;
+	/* now lets consider that we hv to put a footer
+	if we use this property the footer also goes to the right or left 
+	to avoid that we use the next property
+*/ 
+}
+footer{
+	clear: both;
+	text-align: center;
+}
+
+li
+{
+
+	list-style: none;
+	display: inline-block;
+/* use paletton.com to choose colors */ 
+}
+/* #AA4139 */ 
+ 
+
+.webtext{
+
+	border: 5px dashed green;
+}
+
+.active{
+	color: black;
+}
+
+#div1{
+	background: rgba(0,0,250,0.2); 
+}
+
+
+#div2
+{
+
+background: rgba(250,0,0,0.4); 
+
+
+}
+
+
+
+
+
+
+
